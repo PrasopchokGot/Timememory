@@ -1,0 +1,130 @@
+html body {
+    background-color: rgb(243, 243, 243);
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+ul{
+    border: 2px solid red;
+}
+
+li {
+    border: 2px solid yellow;
+
+}
+div {
+    border: 2px solid green;
+
+}
+
+.container {
+    display: flex;
+    position: relative;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0px 2px 5px rgb(233, 233, 233);
+}
+
+ul.navbar {
+    display: flex;
+    align-items: center;
+    width: 80%;
+    padding: 15px;
+    margin: auto;
+    background-color: white;
+}
+
+ul.menu {
+    display: inline-block;
+    margin: auto;
+    margin-right: 10px;
+    padding: 0;
+}
+
+ul.navbar > li {
+    display: inline-block;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+ul.menu > li {
+    display: inline-block;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.navbar ul {
+    padding: 0;
+}
+
+.navbar a {
+    text-decoration: none;
+}
+
+.menu a:hover:not(.button) {
+    color: navy;
+}
+
+.logo {
+    display: flex;
+    margin-left: 10px;
+    height: 40px;
+}
+
+.button {
+    position: relative;
+    /* display: block; */
+    background-color: rgb(18, 44, 99);
+    padding: 8px;
+    border-radius: 20px; */
+}
+
+.button a{
+    /* position: relative; */
+    color: white;
+}
+
+.button:hover a{
+    color: rgb(18, 44, 99);
+}
+
+.button:hover {
+    background-color: white;
+    border: 2px solid rgb(18, 44, 99);
+    /* padding: 8px;
+    padding-left: 10px;
+    padding-right: 10px; */
+}
+
+ul.dropdown-content {
+    display: none;
+    position: absolute;
+    bottom: 0;
+    background-color: rgba(192, 192, 192, 0.781);
+}
+
+.button:hover .dropdown-content {
+    display: block;
+    padding: 0;
+    margin: 0;
+}
+
+.button:hover .dropdown-content li a {
+    color: navy;
+}
+
+.font-welcome {
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-size: 100px;
+    /* text-shadow: 2px 5px 5px rgb(146, 146, 146); */
+}
+
+
