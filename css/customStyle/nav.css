@@ -9,18 +9,18 @@ html body {
     box-sizing: border-box;
 }
 
-ul{
+/* ul{
     border: 2px solid red;
 }
 
 li {
     border: 2px solid yellow;
-
 }
+
 div {
     border: 2px solid green;
+}  */
 
-}
 
 .container {
     display: flex;
@@ -54,6 +54,7 @@ ul.navbar > li {
 }
 
 ul.menu > li {
+    position: relative;
     display: inline-block;
     align-items: center;
     padding-left: 10px;
@@ -61,11 +62,13 @@ ul.menu > li {
 }
 
 .navbar ul {
+    list-style-type: none;
     padding: 0;
 }
 
 .navbar a {
     text-decoration: none;
+    color: rgb(18, 44, 99);
 }
 
 .menu a:hover:not(.button) {
@@ -78,47 +81,33 @@ ul.menu > li {
     height: 40px;
 }
 
-.button {
+.dropdown {
     position: relative;
-    /* display: block; */
+    display: block;
+}
+
+.button {
     background-color: rgb(18, 44, 99);
     padding: 8px;
-    border-radius: 20px; */
-}
-
-.button a{
-    /* position: relative; */
-    color: white;
-}
-
-.button:hover a{
-    color: rgb(18, 44, 99);
+    border-radius: 20px;
+    border: none;
 }
 
 .button:hover {
     background-color: white;
     border: 2px solid rgb(18, 44, 99);
-    /* padding: 8px;
-    padding-left: 10px;
-    padding-right: 10px; */
+    padding: 6px;
+    cursor: pointer;
 }
 
-ul.dropdown-content {
-    display: none;
-    position: absolute;
-    bottom: 0;
-    background-color: rgba(192, 192, 192, 0.781);
+.button a {
+    color: white;
 }
 
-.button:hover .dropdown-content {
-    display: block;
-    padding: 0;
-    margin: 0;
+.button:hover a {
+    color:rgb(1, 44, 99);
 }
 
-.button:hover .dropdown-content li a {
-    color: navy;
-}
 
 .font-welcome {
     text-align: center;
